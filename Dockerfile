@@ -1,7 +1,4 @@
-FROM amazoncorretto:17
-
-MAINTAINER Ismael
-
-COPY /target/backend-0.0.1-SNAPSHOT.jar backend-0.0.1-SNAPSHOT.jar
-
-ENTRYPOINT ["java","-jar","/backend-0.0.1-SNAPSHOT.jar"]
+from amazoncorretto:17.0.7
+maintainer Ismael
+copy /target/backend-0.0.1-SNAPSHOT.jar backend-0.0.1-SNAPSHOT.jar
+entrypoint ["java","-jar","/backend-0.0.1-SNAPSHOT.jar"]
